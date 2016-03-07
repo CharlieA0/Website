@@ -1,0 +1,8 @@
+<h1><%= @project.name %></h1>
+<hr />
+
+<p>
+  <%= markdown(@project.body) %>
+</p>
+<h4>Started <%= time_ago_in_words @project.started_at %> <%= @project.started_at %> ago</h4>
+<%= link_to "Back to Index", projects_path %>

@@ -16,4 +16,5 @@
 //= require react_ujs
 //= require components
 //= require react
+//= require bootstrap-markdown-bundle
 //= require_tree .

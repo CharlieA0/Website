@@ -1,0 +1,2 @@
+class IntraController < ApplicationController
+end

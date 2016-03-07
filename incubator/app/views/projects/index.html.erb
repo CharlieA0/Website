@@ -1,0 +1,13 @@
+<hr />
+<% @projects.each do |post| %>
+  <h1><%= link_to post.name, post %></h1>
+
+  <p>
+    <%= markdown(post.body) %>
+  </p>
+  <h5>Published <%= time_ago_in_words post.started_at %> ago</h5>
+
+  <% if post != @projects.last %>
+  <hr />
+  <% end %>
+<% end %>

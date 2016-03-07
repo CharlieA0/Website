@@ -12,3 +12,8 @@ HomeController	app/controllers/home_controller.rb	/^class HomeController < Appli
 HomeControllerTest	test/controllers/home_controller_test.rb	/^class HomeControllerTest < ActionController::TestCase$/;"	c
 HomeHelper	app/helpers/home_helper.rb	/^module HomeHelper$/;"	m
 Incubator	config/application.rb	/^module Incubator$/;"	m
+ProjectsController	app/controllers/projects_controller.rb	/^class ProjectsController < ApplicationController$/;"	c
+ProjectsHelper	app/helpers/projects_helper.rb	/^module ProjectsHelper$/;"	m
+index	app/controllers/projects_controller.rb	/^  def index$/;"	f	class:ProjectsController
+markdown	app/helpers/projects_helper.rb	/^	def markdown(text)$/;"	f	class:ProjectsHelper
+show	app/controllers/projects_controller.rb	/^  def show$/;"	f	class:ProjectsController

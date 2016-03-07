@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  body: MyText
+  started_at: 2016-03-07 11:18:21
+  finished_at: 2016-03-07 11:18:21
+  cost: 1.5
+
+two:
+  name: MyString
+  body: MyText
+  started_at: 2016-03-07 11:18:21
+  finished_at: 2016-03-07 11:18:21
+  cost: 1.5
