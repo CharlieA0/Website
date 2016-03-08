@@ -8,12 +8,20 @@ ActiveSupport	test/test_helper.rb	/^class ActiveSupport::TestCase$/;"	c
 Application	config/application.rb	/^  class Application < Rails::Application$/;"	c	class:Incubator
 ApplicationController	app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
 ApplicationHelper	app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+CmsController	app/controllers/cms_controller.rb	/^class CmsController < ApplicationController$/;"	c
 HomeController	app/controllers/home_controller.rb	/^class HomeController < ApplicationController$/;"	c
 HomeControllerTest	test/controllers/home_controller_test.rb	/^class HomeControllerTest < ActionController::TestCase$/;"	c
 HomeHelper	app/helpers/home_helper.rb	/^module HomeHelper$/;"	m
 Incubator	config/application.rb	/^module Incubator$/;"	m
+IntraController	app/controllers/intra_controller.rb	/^class IntraController < ApplicationController$/;"	c
 ProjectsController	app/controllers/projects_controller.rb	/^class ProjectsController < ApplicationController$/;"	c
 ProjectsHelper	app/helpers/projects_helper.rb	/^module ProjectsHelper$/;"	m
+approve	app/controllers/cms_controller.rb	/^  def approve$/;"	f	class:CmsController
+create	app/controllers/projects_controller.rb	/^	def create$/;"	f	class:ProjectsController
+edit	app/controllers/cms_controller.rb	/^  def edit$/;"	f	class:CmsController
+editor	app/controllers/intra_controller.rb	/^	def editor$/;"	f	class:IntraController
 index	app/controllers/projects_controller.rb	/^  def index$/;"	f	class:ProjectsController
 markdown	app/helpers/projects_helper.rb	/^	def markdown(text)$/;"	f	class:ProjectsHelper
+new	app/controllers/cms_controller.rb	/^  def new$/;"	f	class:CmsController
+project_params	app/controllers/projects_controller.rb	/^  def project_params$/;"	f	class:ProjectsController
 show	app/controllers/projects_controller.rb	/^  def show$/;"	f	class:ProjectsController

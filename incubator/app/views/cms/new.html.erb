@@ -1,0 +1,7 @@
+<h1>Cms#new</h1>
+<p>Find me in app/views/cms/new.html.erb</p>
+<%= bootstrap_form_for(@project) do |f| %>
+	<%= f.text_field :name %>
+	<%= f.text_area :body %>
+	<%= f.submit%>
+<% end %>
