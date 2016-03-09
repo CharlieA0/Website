@@ -1,7 +1,13 @@
-<h1>Cms#new</h1>
-<p>Find me in app/views/cms/new.html.erb</p>
-<%= bootstrap_form_for(@project) do |f| %>
-	<%= f.text_field :name %>
-	<%= f.text_area :body %>
-	<%= f.submit%>
-<% end %>
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6 col-xs-12">
+  <h1>Create new projects</h1>
+    <%= bootstrap_form_for(@project) do |f| %>
+      <%= f.text_field :name %>
+      <%= f.text_area :body, :rows => 30,:data => {:provide => 'markdown' }%>
+      <%= f.submit%>
+    <% end %>
+  </div>
+  <div class="col-md-3"></div>
+  </div>
+</div>
