@@ -1,3 +1,16 @@
 // Place all the styles related to the Projects controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.selector {
+	border: 2px solid;
+	background: white;
+	height: 300px;
+}
+
+@media screen and (min-width: 1024px) {
+	  $base_width: 1160px;
+	div.selector {
+		padding: 0 5px 0 5px;
+	}
+}

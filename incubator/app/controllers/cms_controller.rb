@@ -10,4 +10,7 @@ class CmsController < ApplicationController
 
   end
 
+  def index
+  end
+
 end
