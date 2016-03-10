@@ -4,13 +4,27 @@
 
 .selector {
 	border: 2px solid;
-	background: white;
 	height: 300px;
+}
+
+a {
+  border: 0px;
+  color: red;
+  position: relative;
+}
+
+a:hover, a:visited, a:link, a:active {
+  text-decoration:none;
+  border: none;
+}
+
+.center_text {
+  text-align: center;
 }
 
 @media screen and (min-width: 1024px) {
 	  $base_width: 1160px;
 	div.selector {
-		padding: 0 5px 0 5px;
+		padding: 5px 5px 5px 5px;
 	}
 }
