@@ -13,6 +13,7 @@ gem 'react-rails', '~> 1.6.2'
 gem 'autoprefixer-rails'
 gem 'rails-bootstrap-markdown'
 gem 'bootstrap_form'
+gem 'faker', '~> 1.6', '>= 1.6.3'
 
 gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
