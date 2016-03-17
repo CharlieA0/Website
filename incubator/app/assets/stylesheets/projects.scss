@@ -2,11 +2,21 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.selector {
-	border: 2px solid;
-	height: 300px;
+.project_selector {
+	border-style: 2px solid;
+  border-color: black;
+	background: white;
+	height: 33vh;
 }
+div[class|='col'] {
+  @media screen and (min-width: 1024px) {
+    padding: 15px 15px 15px 15px;
+  }
+  @media screen and (max-width: 1024px) {
+    padding: 0 0 0 0;
+  }
 
+}
 a {
   border: 0px;
   color: red;
@@ -21,10 +31,9 @@ a:hover, a:visited, a:link, a:active {
 .center_text {
   text-align: center;
 }
-
-@media screen and (min-width: 1024px) {
-	  $base_width: 1160px;
-	div.selector {
-		padding: 5px 5px 5px 5px;
-	}
+#background {
+  width: 70%;
+  height: 100vh;
+  margin-right: auto;
+  margin-left: auto;
 }

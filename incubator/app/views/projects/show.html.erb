@@ -1,18 +1,21 @@
-<div class="center_text">
-  <h1 ><%= @project.name %></h1>
-</div>
-<div style="text-align:right;padding:10px;">
-  <h4>Made by: <%=@project.creator%>
-  <br>Price to implement: <%=@project.cost %> €</h3>
-</div>
-<div class="row">
-  <div class="col-md-3 col-sm-2"></div>
-  <div class="col-md-6 col-sm-8 col-xs-12">
-    <p>
-      <%= markdown(@project.body) %>
-    </p>
+<%= render 'layouts/header' %>
+<div id="background" class="background">
+  <div class="center_text">
+    <h1 ><%= @project.name %></h1>
   </div>
-  <div class="col-md-3"></div>
+  <div style="text-align:right;padding:10px;">
+    <h4>Made by: <%=@project.creator%>
+    <br>Price to implement: <%=@project.cost %> €</h3>
+  </div>
+  <div class="row">
+    <div class="col-md-3 col-sm-2"></div>
+    <div class="col-md-6 col-sm-8 col-xs-12">
+      <p>
+        <%= markdown(@project.body) %>
+      </p>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+  <h4>Started at <%=@project.started_at.strftime('%a, %d %b %Y') %>. <br> <%=time_ago_in_words @project.started_at %> ago</h4>
+  <%= link_to "Back to Index", projects_path %>
 </div>
-<h4>Started at <%=@project.started_at.strftime('%a, %d %b %Y') %>. <br> <%=time_ago_in_words @project.started_at %> ago</h4>
-<%= link_to "Back to Index", projects_path %>

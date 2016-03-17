@@ -1,0 +1,31 @@
+<div class="bar">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="row hidden-sm hidden-xs">
+          <div class="col-md-5">
+            <ul class="nav navbar-nav navbar-left nav-tabs nav-justified">
+              <li><%= link_to 'Home', root_path %></li>
+              <li><%= link_to 'Background', home_path("index") %></li>
+              <li><%= link_to 'Course', home_path("index") %></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <div class="navbar-header navbar-center" style="width:100%">
+              <a id="center" class="navbar-brand" href="/">
+                <%= image_tag("logo.png", class: "bar")%>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <ul class="nav navbar-nav navbar-left nav-tabs nav-justified">
+              <li><%= link_to 'Projects', projects_path %></li>
+              <li><%= link_to 'Contribute', home_path("index") %></li>
+              <li><%= link_to 'Contact', home_path("index") %></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>

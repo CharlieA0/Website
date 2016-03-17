@@ -1,0 +1,13 @@
+<%= render 'layouts/header' %>
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6 col-xs-12">
+    <h1>Edit project <%= @project.name %>  </h1>
+    <%= bootstrap_form_for(@project) do |f| %>
+      <%= f.text_area :body, :rows => 30,:data => {:provide => 'markdown' }, :placeholder => @project.body%>
+      <%= f.submit%>
+    <% end %>
+  </div>
+  <div class="col-md-3"></div>
+  </div>
+</div>

@@ -1,15 +1,12 @@
-<hr />
-
+<%= render 'layouts/header' %>
 <div class="row">
 <div class="col-md-3"></div>
   <% @projects.each_index do |index| %>
     <div class="col-md-2 col-xs-4">
-        <h1>
           <%= content_tag :div, class: "selector", onclick: "window.location.href = '"+ url_for(@projects[index])+"';" do -%>
-            <%= @projects[index].name %> <br>
-              <p>Made by <%= @projects[index].creator %><p/>
+            <h1><%= @projects[index].name %> <br></h1>
+            <h3><p>Made by <%= @projects[index].creator %><p/></h3>
           <% end -%>
-        </h1>
     </div>
     <% dividend = (index+1) % 3 %>
     <% if dividend == 0 %>

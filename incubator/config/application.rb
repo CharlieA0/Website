@@ -9,7 +9,7 @@ Bundler.require(*Rails.groups)
 module Incubator
   class Application < Rails::Application
 		config.time_zone = "Helsinki"
-		config.filter_parameters += [:password]
+#		config.filter_parameters += [:password]
     config.active_record.raise_in_transactional_callbacks = true
   end
 end

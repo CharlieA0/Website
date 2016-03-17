@@ -5,6 +5,7 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
 ActiveSupport	test/test_helper.rb	/^class ActiveSupport::TestCase$/;"	c
+AddAttributesToUsers	db/migrate/20160316093534_add_attributes_to_users.rb	/^class AddAttributesToUsers < ActiveRecord::Migration$/;"	c
 Application	config/application.rb	/^  class Application < Rails::Application$/;"	c	class:Incubator
 ApplicationController	app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
 ApplicationHelper	app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
@@ -14,14 +15,31 @@ HomeControllerTest	test/controllers/home_controller_test.rb	/^class HomeControll
 HomeHelper	app/helpers/home_helper.rb	/^module HomeHelper$/;"	m
 Incubator	config/application.rb	/^module Incubator$/;"	m
 IntraController	app/controllers/intra_controller.rb	/^class IntraController < ApplicationController$/;"	c
+Project	app/models/project.rb	/^class Project < ActiveRecord::Base$/;"	c
 ProjectsController	app/controllers/projects_controller.rb	/^class ProjectsController < ApplicationController$/;"	c
 ProjectsHelper	app/helpers/projects_helper.rb	/^module ProjectsHelper$/;"	m
+Team	app/models/team.rb	/^class Team < ActiveRecord::Base$/;"	c
+User	app/models/user.rb	/^class User < ActiveRecord::Base$/;"	c
+UsersController	app/controllers/users_controller.rb	/^class UsersController < ApplicationController$/;"	c
+Work	app/models/work.rb	/^class Work < ActiveRecord::Base$/;"	c
 approve	app/controllers/cms_controller.rb	/^  def approve$/;"	f	class:CmsController
+change	db/migrate/20160316093534_add_attributes_to_users.rb	/^  def change$/;"	f	class:AddAttributesToUsers
+clear_password	app/models/user.rb	/^  def clear_password$/;"	f	class:User
 create	app/controllers/projects_controller.rb	/^	def create$/;"	f	class:ProjectsController
-edit	app/controllers/cms_controller.rb	/^  def edit$/;"	f	class:CmsController
+create	app/controllers/users_controller.rb	/^  def create$/;"	f	class:UsersController
 editor	app/controllers/intra_controller.rb	/^	def editor$/;"	f	class:IntraController
+encrypt_password	app/models/user.rb	/^  def encrypt_password$/;"	f	class:User
+index	app/controllers/cms_controller.rb	/^  def index$/;"	f	class:CmsController
+index	app/controllers/home_controller.rb	/^  def index$/;"	f	class:HomeController
 index	app/controllers/projects_controller.rb	/^  def index$/;"	f	class:ProjectsController
+index	app/controllers/users_controller.rb	/^  def index$/;"	f	class:UsersController
+markdown	app/helpers/home_helper.rb	/^	def markdown(text)$/;"	f	class:HomeHelper
 markdown	app/helpers/projects_helper.rb	/^	def markdown(text)$/;"	f	class:ProjectsHelper
 new	app/controllers/cms_controller.rb	/^  def new$/;"	f	class:CmsController
+new	app/controllers/users_controller.rb	/^  def new$/;"	f	class:UsersController
 project_params	app/controllers/projects_controller.rb	/^  def project_params$/;"	f	class:ProjectsController
+show	app/controllers/cms_controller.rb	/^  def show$/;"	f	class:CmsController
 show	app/controllers/projects_controller.rb	/^  def show$/;"	f	class:ProjectsController
+show	app/controllers/users_controller.rb	/^  def show$/;"	f	class:UsersController
+update	app/controllers/projects_controller.rb	/^  def update$/;"	f	class:ProjectsController
+user_params	app/controllers/users_controller.rb	/^        def user_params$/;"	f	class:UsersController

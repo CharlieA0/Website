@@ -13,7 +13,7 @@ gem 'react-rails', '~> 1.6.2'
 gem 'autoprefixer-rails'
 gem 'rails-bootstrap-markdown'
 gem 'bootstrap_form'
-gem 'faker', '~> 1.6', '>= 1.6.3'
+gem 'bcrypt-ruby', :require=>'bcrypt'
 
 gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
@@ -23,8 +23,8 @@ end
 group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
-  gem 'ffaker'
   gem 'sqlite3'
+  gem 'faker', '~> 1.6', '>= 1.6.3'
 end
 group :production do
   gem 'pg', '~> 0.15'

@@ -3,7 +3,8 @@ class CmsController < ApplicationController
 		@project = Project.new
   end
 
-  def edit
+  def show
+    @project = Project.find(params[:id])
   end
 
   def approve
@@ -11,6 +12,7 @@ class CmsController < ApplicationController
   end
 
   def index
+    @projects = Project.order("started_at DESC")
   end
 
 end

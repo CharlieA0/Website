@@ -6,10 +6,23 @@ class ProjectsController < ApplicationController
   def show
 		@project = Project.find(params[:id])
   end
+
 	def create
 		project = Project.create(project_params)
 		project.update(started_at: Time.now)
+    redirect_to action: "show", id: project.id
 	end
+
+  def update
+    project = Project.find(params[:id])
+    @project = project
+    body = project_params
+    puts body
+    if !body.blank?
+      project.update(body: params[:body])
+    end
+    #redirect_to action: "show", id: params[:id]
+  end
 
 	private
   def project_params
