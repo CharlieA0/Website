@@ -4,6 +4,7 @@ class UsersController < ApplicationController
   end
 
   def index
+    @users = User.order("updated_at DESC")
   end
 
   def show

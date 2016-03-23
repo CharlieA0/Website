@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
-  has_many :works
-  has_many :projects, through: :works
-  has_one :usable_person
+  #has_many :works
+  #has_many :projects, through: :works
+  #has_one :usable_person
   attr_accessor :password
   EMAIL_REGEX = /\A\S+@.+\.\S+\z/
   validates :username, :presence => true, :uniqueness => true, :length => { :in => 3..20 }

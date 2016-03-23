@@ -1,31 +1,37 @@
-<div class="bar">
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <div class="row hidden-sm hidden-xs">
-          <div class="col-md-5">
-            <ul class="nav navbar-nav navbar-left nav-tabs nav-justified">
-              <li><%= link_to 'Home', root_path %></li>
-              <li><%= link_to 'Background', home_path("index") %></li>
-              <li><%= link_to 'Course', home_path("index") %></li>
-            </ul>
+<br>
+<br>
+<br>
+<br>
+<div id="#bar" class="bar">
+<nav class="navbar navbar-default"><!--I shall use JQuery to fade and stick this in top of page--!>
+  <div class="container-fluid">
+      <div class="row">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="col-md-5">
+          <ul class="nav navbar-nav navbar-left nav-tabs nav-justified">
+            <li id="Home" class="bar_tab"><a href="/#home"><span>HOME</span></a></li>
+            <li id="Background" class="bar_tab"><a href="/background"><span>BACKGROUND</span></a></li>
+            <li id="Course" class="bar_tab"><a href="/course"><span>COURSE</span></a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <div class="navbar-header navbar-center" style="width:100%">
+            <a id="center" class="navbar-brand" href="/#home">
+              <img class="bar" src="/assets/logo-b2131a38abbf367e292c53e87ccf985000ac1a3b685cff3a5cdcdbcc048a910a.png" alt="Logo b2131a38abbf367e292c53e87ccf985000ac1a3b685cff3a5cdcdbcc048a910a" />
+            </a>
           </div>
-          <div class="col-md-2">
-            <div class="navbar-header navbar-center" style="width:100%">
-              <a id="center" class="navbar-brand" href="/">
-                <%= image_tag("logo.png", class: "bar")%>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-5">
-            <ul class="nav navbar-nav navbar-left nav-tabs nav-justified">
-              <li><%= link_to 'Projects', projects_path %></li>
-              <li><%= link_to 'Contribute', home_path("index") %></li>
-              <li><%= link_to 'Contact', home_path("index") %></li>
-            </ul>
-          </div>
+        </div>
+        <div class="col-md-5">
+          <ul class="nav navbar-nav navbar-left nav-tabs nav-justified">
+            <li id="Project" class="bar_tab"><a href="/projects"><span>PROJECTS</span></a></li>
+            <li id="Contribute" class="bar_tab"><a href="/contribute"><span>CONTRIBUTE</span></a></li>
+              <li id="User" class="bar_tab"><a href="/users"><span>CONTACT</span></a></li>
+          </ul>
         </div>
       </div>
     </div>
-  </nav>
+
+  </div>
+</nav>
 </div>
+<div class="background-full">

@@ -1,20 +1,9 @@
 <%= render 'layouts/header' %>
-<div class="row">
-<div class="col-md-3"></div>
-  <% @projects.each_index do |index| %>
-    <div class="col-md-2 col-xs-4">
-          <%= content_tag :div, class: "selector", onclick: "window.location.href = '"+ url_for(@projects[index])+"';" do -%>
-            <h1><%= @projects[index].name %> <br></h1>
-            <h3><p>Made by <%= @projects[index].creator %><p/></h3>
-          <% end -%>
-    </div>
-    <% dividend = (index+1) % 3 %>
-    <% if dividend == 0 %>
-      <div class="col-md-3"></div>
-</div>
-<div class="row">
-  <div class="col-md-3"></div>
-    <% end %>
-<% end %>
-  <div class="col-md-3"></div>
+<div class="background_image">
+    <% @projects.each do |project| %>
+      <%= content_tag :div, class: "project_selector", onclick: "window.location.href = '"+ url_for(project)+"';" do -%>
+        <h2><%= project.name %> <br></h2>
+        <h4><p>Made by <%= project.creator %><p/></h4><%= link_to " ", projects_path(project)%>
+      <% end -%>
+    <% end -%>
 </div>

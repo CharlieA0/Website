@@ -3,37 +3,46 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .project_selector {
+  position: relative;
 	border-style: 2px solid;
   border-color: black;
-	background: white;
-	height: 33vh;
+  background-color: white;
+	border: 2px solid;
+  @media screen and (min-width: 1774px) {
+    width: 300px;
+  }
+  @media screen and (max-width: 1774px) {
+    width: 100%;
+    height: auto;
+  }
 }
 div[class|='col'] {
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1400px) {
     padding: 15px 15px 15px 15px;
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1400px) {
+    padding: 5px 5px 5px 5px;
   }
   @media screen and (max-width: 1024px) {
     padding: 0 0 0 0;
   }
-
 }
-a {
-  border: 0px;
-  color: red;
-  position: relative;
-}
-
-a:hover, a:visited, a:link, a:active {
-  text-decoration:none;
-  border: none;
-}
-
 .center_text {
   text-align: center;
 }
 #background {
   width: 70%;
-  height: 100vh;
+  margin-right: auto;
+  margin-left: auto;
+}
+div.project_text {
+  @media screen and (min-width: 1324px) {
+    padding: 15px 15px 15px 15px;
+    width: 50%;
+  }
+  @media screen and (max-width: 1324px) and (min-width: 750px) {
+    width: 85%;
+  }
   margin-right: auto;
   margin-left: auto;
 }

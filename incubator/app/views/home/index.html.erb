@@ -1,43 +1,42 @@
-<div class="container-fluid">
+<div class="container-fluid page">
 	<div class="row">
 		<div class="start">
       <div id="logo" class="center">
         <%= image_tag("logo.png") %>
       </div>
       <div class="center-width">
-        <i class="fa fa-angle-down fa-5x"></i>
+        <i class="fa fa-angle-down fa-5x" onclick="document.getElementById('home').scrollIntoView({behaviour: 'smooth'});"></i>
       </div>
     </div>
   </div>
   <%= render 'layouts/header' %>
-  <div class="background">
-    <div class="row">
-      <div class="col-md-3"></div>
-      <div class="col-md-6">
-        <p>
-          <%= markdown(@desc.body) %>
-        </p>
-      </div>
-      <div class="col-md-3"></div>
+  <a name="home" id="home"></a>
+  <div class="row">
+    <div class="col-md-3 col-sm-3 col-xs-1"></div>
+    <div class="col-md-6 col-sm-6 col-xs-10">
+      <p>
+        <%= markdown(@desc.body) %>
+      </p>
     </div>
-    <div class="row">
-      <div class="col-md-3"></div>
-      <div class="col-md-2 col-xs-4">
-        <div onclick="window.location = '/projects';" class="selector">
-          Projects
-        </div>
-      </div>
-      <div class="col-md-2 col-xs-4">
-        <div onclick="window.location = '/about_us';" class="selector">
-          About us
-        </div>
-      </div>
-      <div class="col-md-2 col-xs-4">
-        <div onclick="window.location = '/contribute';" class="selector">
-          Contribute
-        </div>
+    <div class="col-md-3 col-sm-6 col-xs-1"></div>
+  </div>
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-2 col-xs-4"> <%#%>
+      <div onclick="window.location = '/projects';" class="selector">
+        Projects
       </div>
     </div>
-		<div class="col-md-3"></div>
-	</div>
+    <div class="col-md-2 col-xs-4">
+      <div onclick="window.location = '/about_us';" class="selector">
+        About us
+      </div>
+    </div>
+    <div class="col-md-2 col-xs-4">
+      <div  onclick="window.location = '/contribute';" class="selector">
+        Contribute
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3"></div>
 </div>
